@@ -1,0 +1,63 @@
+/* Container to hold the grid of movie cards */
+.movie-grid {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Space between the cards */
+    padding: 20px;
+  }
+  
+  /* Individual movie card */
+  .movie-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+  }
+  
+  /* Poster image styling */
+  .movie-poster {
+    width: 100%;
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover; /* Make sure the image covers the card */
+  }
+  
+  /* Movie information section */
+  .movie-info {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .movie-info h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+  }
+  
+  .movie-info p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .head2{
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+  
