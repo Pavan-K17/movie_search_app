@@ -21,6 +21,7 @@
   
 
 .search-results{
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
     background-color: white;
